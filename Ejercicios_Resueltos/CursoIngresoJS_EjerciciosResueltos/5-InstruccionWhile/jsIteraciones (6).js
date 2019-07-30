@@ -1,10 +1,14 @@
 function mostrar()
 {
-
-	var contador=0;
 	var acumulador=0;
-
-
+	var numero;
+	// inicializacion; condicion; incremento
+	for(var i = 0; i < 5; i++)
+	{
+		numero = prompt("Ingrese un numero");
+		numero = parseInt(numero);
+		acumulador = acumulador + numero;
+	}
 
 document.getElementById('suma').value=acumulador;
 document.getElementById('promedio').value=acumulador/5;
